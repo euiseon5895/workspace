@@ -1,0 +1,22 @@
+package ch11;
+
+public class StringEx {
+	public static void main(String[] args) {
+		String name = "ghdrlfehd";
+		System.out.println(name);
+		System.out.println(name.toString());
+		
+		Member m = new Member();
+		System.out.println(m.name);
+		System.out.println(m.toString());
+		System.out.println(m);
+		
+	}
+}
+class Member{
+	String name = "gjfr;fejd";
+	public String toSring() {
+		System.out.println("tㅐStirng tkfgid");
+		return name;
+	}
+}

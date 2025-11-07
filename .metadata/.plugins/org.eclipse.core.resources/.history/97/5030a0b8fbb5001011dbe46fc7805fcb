@@ -1,0 +1,15 @@
+package ch08.sec02;
+
+public class Main {
+	public static void main(String[] args) {
+		RemoteControl rc;
+		rc = new SmartTVImpl();
+		rc.turnOn();
+		rc.turnOff();
+		
+		Searchable sc;
+		sc = new SmartTVImpl();
+		sc.search("침착맨");
+		
+	}
+}

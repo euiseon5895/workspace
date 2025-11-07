@@ -1,0 +1,10 @@
+package ch13.sec02;
+
+public class GenricMain {
+	public static void main(String[] args) {
+		Product<Integer,String> box = new Product<>();
+		box.setKind(1);
+		box.setModel("wtf");
+		System.out.println(box.getKind()+"  "+box.getModel());
+	}
+}

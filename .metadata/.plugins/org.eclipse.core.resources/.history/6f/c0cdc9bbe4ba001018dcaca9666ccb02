@@ -1,0 +1,10 @@
+package ch15.sec03;
+
+public class Main {
+	public static void main(String[] args) {
+		int [][]request = {{2,3}, {1,7}, {2,4}, {3,5}};
+		Solution s = new Solution();
+		int tt = s.solution(10, request);
+		System.out.println(tt);
+	}
+}

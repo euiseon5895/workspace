@@ -1,0 +1,113 @@
+package ch15;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class SortEx {
+	public static void main(String[] args) {
+
+		/*
+		 * 정렬은 무조건 나온다고 보면 됩니다~ 배열: Arrays.sort() 평균 nlogn 최악 n^2 컬렉션:
+		 * Collections.sort() 평균 nlogn 최악 nlogn
+		 */
+
+		// 기본 자료형 배열
+		int[] arr = { 8, 1, 6, 2, 4, 3, 1 };
+		System.out.println(Arrays.toString(arr));
+		//Arrays.sort(arr); // 오름차순 정렬 -> 내림차순 안됨 ㅠㅠ
+		//System.out.println(Arrays.toString(arr));
+
+		
+		
+		//컬렉션 
+		
+		List<Integer> list = new ArrayList<>();
+		
+		for (int a : arr) {
+			list.add(a);
+		}
+		System.out.println(list);
+		
+		Collections.sort(list);
+		System.out.println(list); //오름
+		
+		Collections.sort(list,Comparator.reverseOrder());  //내림
+		System.out.println(list);
+		
+		
+		
+		/*
+		 객체 정렬
+		 Comparable 인터페이스 구현
+		 Comparator 인터페이스를 구현객체(익명구현객체, 람다식)
+		 */
+		
+		//리스트안에 맴객체
+		//맵안에는 이름, 나이(나이순으로 정렬)
+		List<Map<String,Object>> list2 = new ArrayList<>();
+		Map<String,Object> map = new HashMap<>();
+		
+		map.put("name","nakamura");
+		map.put("age",20);
+		list2.add(map);
+		map.put("name","sacamoto");
+		map.put("age",19);
+		list2.add(map);
+		map.put("name","dakaecci");
+		map.put("age",42);
+		list2.add(map);
+		
+		System.out.println(list2);
+		
+		
+		
+		
+		int [][] arr4 = {{1,99},{2,98},{3,97},{4,96}};
+		
+		
+		Arrays.sort(arr4,new Comparator<int []>() {
+
+			@Override
+			public int compare(int[] o1, int[] o2) {
+				// TODO Auto-generated method stub
+				
+				return (o1[1]-o2[1]); //양수면 오름차순 음수면 내림차순
+			}
+			
+		});
+		
+		for (int[] is : arr4) {
+			System.out.println(Arrays.toString(is));
+		}
+
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+}

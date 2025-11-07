@@ -1,0 +1,18 @@
+package ch15.sec02.exam01;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSetEx {
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<>();
+
+		set.add("asd");
+		set.add("ddsd");
+		set.add("sdss");
+		set.add("asd"); // --------------> 중복이여서 저장안함
+		int size = set.size();
+		System.out.println(set);
+		System.out.println(size);
+	}
+}

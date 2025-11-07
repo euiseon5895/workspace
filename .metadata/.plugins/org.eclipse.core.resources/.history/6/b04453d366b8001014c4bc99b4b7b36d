@@ -1,0 +1,21 @@
+package ch11;
+
+public class ExceptionEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("시작");
+		int a = 10;
+		int b ;
+
+		try {
+			int c = a / b; // Exception ->program stop
+			System.out.println(c);
+		} catch (ArithmeticException e) {
+			System.out.println("예외발생");
+		}
+		
+		System.out.println("끝");
+	}
+
+}

@@ -1,0 +1,11 @@
+package ch13.sec02;
+
+public class GenccccMain {
+	public static void main(String[] args) {
+		HomeAgency homeAgency = new HomeAgency();
+		Home home = homeAgency.rent();
+		home.turnOnLight();
+		
+		
+	}
+}

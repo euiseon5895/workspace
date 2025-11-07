@@ -1,0 +1,12 @@
+package ch15.sec02.exam01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListEx {
+	public static void main(String[] args) {
+		List<Board> list = new ArrayList<>();
+		
+		list.add(new Board)
+	}
+}

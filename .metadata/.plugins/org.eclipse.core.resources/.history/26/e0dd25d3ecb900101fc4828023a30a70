@@ -1,0 +1,29 @@
+package ch14.sec01;
+
+public class Ex2 {
+	public static void main(String[] args) {
+		Thread mainThread = Thread.currentThread();
+		System.out.println(mainThread.getName()+" start");
+		
+		for(int i=0;i<3;i++) {
+			Thread threadA = new Thread() {
+				@Override
+				public void run() {
+					System.out.println(getName()+ " start");
+				}
+			};
+			threadA.start();
+		}
+		
+		System.out.println("---------------"
+				+ "");
+		Thread chatThread = new Thread() {
+			@Override
+			public void run() {
+				System.out.println(getName()+" start");
+			}
+		};
+		chatThread.setName("chat-thread");
+		chatThread.start();
+	}
+}

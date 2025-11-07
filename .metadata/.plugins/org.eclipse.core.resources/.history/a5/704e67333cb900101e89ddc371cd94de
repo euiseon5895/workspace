@@ -1,0 +1,9 @@
+package ch12.sec11;
+
+public class GetClassEx {
+	public static void main(String[] args) {
+		Class clazz = Car.class;
+		System.out.println("package: "+clazz.getPackage().getName());
+		
+	}
+}

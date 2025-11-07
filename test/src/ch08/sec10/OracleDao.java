@@ -1,0 +1,29 @@
+package ch08.sec10;
+
+public class OracleDao implements DataAccessObject {
+
+	@Override
+	public void select() {
+		// TODO Auto-generated method stub
+		System.out.println("오라클 select");
+	}
+
+	@Override
+	public void insert() {
+		// TODO Auto-generated method stub
+		System.out.println("오라클 insert");
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		System.out.println("오라클 update");
+	}
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		System.out.println("오라클 delete");
+	}
+
+}

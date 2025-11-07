@@ -1,0 +1,26 @@
+package ch15;
+
+import java.util.Arrays;
+
+public class SortEx {
+	public static void main(String[] args) {
+
+		/*
+		 * 정렬은 무조건 나온다고 보면 됩니다~ 배열: Arrays.sort() 평균 nlogn 최악 n^2 컬렉션:
+		 * Collections.sort() 평균 nlogn 최악 nlogn
+		 */
+
+		// 기본 자료형 배열
+		int[] arr = { 8, 1, 6, 2, 4, 3, 1 };
+		System.out.println(Arrays.toString(arr));
+		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
+
+		// 문자열 배열
+		
+		String[] arr2 = {"도쿄","오사카","오키나와","삿포로"};
+		Arrays.sort(arr2);
+		System.out.println(Arrays.toString(arr2));
+ 
+	}
+}
