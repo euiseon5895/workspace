@@ -1,5 +1,0 @@
-package ch15;
-
-public interface Speckable {
-	void work(String name, String job);
-}
