@@ -1,6 +1,7 @@
 package classProblem.moneyP;
 
 import java.util.List;
+
 import java.util.ArrayList;
 
 public class Bank {
@@ -24,8 +25,13 @@ public class Bank {
 	}
 	
 	// 예금하기
-	public void deposit() {
-		
+	public void deposit(String find,int money) {
+		Account a = findAccount(find);
+		if(a.getName().equals(find)) {
+			a.coin+= money;
+		}else {
+			System.out.println("없는 계좌입니다~");
+		}
 	}
 	
 	// 출금하기
